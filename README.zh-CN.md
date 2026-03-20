@@ -251,6 +251,8 @@ enabled = true
 receive_id_type = "chat_id"
 webhook_bind = "127.0.0.1:8080"
 webhook_path = "/feishu/events"
+#
+# Security note: `allowed_chat_ids = ["*"]` accepts messages from any chat (not recommended).
 allowed_chat_ids = ["oc_your_chat_id"]
 ```
 
@@ -272,6 +274,8 @@ export FEISHU_APP_SECRET=your_app_secret
 enabled = true
 mode = "websocket"
 receive_id_type = "chat_id"
+#
+# Security note: `allowed_chat_ids = ["*"]` accepts messages from any chat (not recommended).
 allowed_chat_ids = ["oc_your_chat_id"]
 ```
 
